@@ -16,6 +16,7 @@
 #import "UIView+Introspector.h"
 #import "UIWindow+Introspector.h"
 #import "CBIntrospect.h"
+#import "UIView+ViewController.h"
 
 #ifdef DEBUG
 // break into GDB code complied from following sources: 
@@ -829,6 +830,10 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
 			self.statusBarOverlay.leftLabel.text = [NSString stringWithFormat:@"%@ (tag: %i)", nameForObject, self.currentView.tag];
 		else
 			self.statusBarOverlay.leftLabel.text = [NSString stringWithFormat:@"%@", nameForObject];
+		
+		UIViewController *viewController = self.currentView.viewController;
+		if (viewController)
+			self.statusBarOverlay.leftLabel.text = [NSString stringWithFormat:@"%@: %@", viewController, self.statusBarOverlay.leftLabel.text];
 		
 		self.statusBarOverlay.rightLabel.text = NSStringFromCGRect(self.currentView.frame);
 	}

@@ -15,6 +15,7 @@
 #include <sys/types.h>
 #import <objc/runtime.h>
 #import "CBIntrospect.h"
+#import "UIView+ViewController.h"
 
 @interface UIView (Custom)
 + (NSString *)filePathWithView:(UIView *)view;
@@ -468,6 +469,9 @@
 	if ([objectClass isSubclassOfClass:UIView.class])
 	{
 		UIView *view = (UIView *)self;
+		
+		[outputString appendFormat:@"  View Controller: %@\n\n", view.viewController];
+		
 		// print out generic uiview properties
 		[outputString appendString:@"  ** UIView properties **\n"];
 		[outputString appendFormat:@"    tag: %i\n", view.tag];

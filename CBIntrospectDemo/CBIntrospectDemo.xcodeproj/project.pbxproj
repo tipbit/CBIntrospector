@@ -28,6 +28,7 @@
 		1E73F23A15C34754004EE6E2 /* UIWindow+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E73F22F15C34754004EE6E2 /* UIWindow+Introspector.m */; };
 		1E73F23E15C347D9004EE6E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E73F23D15C347D9004EE6E2 /* QuartzCore.framework */; };
 		1E73F24015C34839004EE6E2 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E73F23F15C34839004EE6E2 /* circle.png */; };
+		42F55A7115D19EDB00E6921A /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BE66B15C9810E00B9A37B /* UIView+ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		1E73F22F15C34754004EE6E2 /* UIWindow+Introspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Introspector.m"; sourceTree = "<group>"; };
 		1E73F23D15C347D9004EE6E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1E73F23F15C34839004EE6E2 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		423BE66A15C9810E00B9A37B /* UIView+ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewController.h"; path = "../../../../BottleRocket/postpolitics/Post Politics/Post Politics/Utility/UIView+ViewController.h"; sourceTree = "<group>"; };
+		423BE66B15C9810E00B9A37B /* UIView+ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewController.m"; path = "../../../../BottleRocket/postpolitics/Post Politics/Post Politics/Utility/UIView+ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 			children = (
 				1E73F22C15C34754004EE6E2 /* UIView+Introspector.h */,
 				1E73F22D15C34754004EE6E2 /* UIView+Introspector.m */,
+				423BE66A15C9810E00B9A37B /* UIView+ViewController.h */,
+				423BE66B15C9810E00B9A37B /* UIView+ViewController.m */,
 				1E73F22E15C34754004EE6E2 /* UIWindow+Introspector.h */,
 				1E73F22F15C34754004EE6E2 /* UIWindow+Introspector.m */,
 			);
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F55A7115D19EDB00E6921A /* UIView+ViewController.m in Sources */,
 				1E73F20015C3467E004EE6E2 /* main.m in Sources */,
 				1E73F20415C3467E004EE6E2 /* CBAppDelegate.m in Sources */,
 				1E73F21215C34709004EE6E2 /* DCIntrospectDemoViewController.m in Sources */,
@@ -358,6 +364,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBIntrospectDemo/CBIntrospectDemo-Prefix.pch";
 				INFOPLIST_FILE = "CBIntrospectDemo/CBIntrospectDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -369,6 +379,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBIntrospectDemo/CBIntrospectDemo-Prefix.pch";
 				INFOPLIST_FILE = "CBIntrospectDemo/CBIntrospectDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
