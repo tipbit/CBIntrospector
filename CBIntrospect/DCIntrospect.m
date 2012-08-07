@@ -833,7 +833,7 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
 		
 		UIViewController *viewController = self.currentView.viewController;
 		if (viewController)
-			self.statusBarOverlay.leftLabel.text = [NSString stringWithFormat:@"%@: %@", viewController, self.statusBarOverlay.leftLabel.text];
+			self.statusBarOverlay.leftLabel.text = [self.statusBarOverlay.leftLabel.text stringByAppendingFormat:@" [%@]", NSStringFromClass(viewController.class)];
 		
 		self.statusBarOverlay.rightLabel.text = NSStringFromCGRect(self.currentView.frame);
 	}
