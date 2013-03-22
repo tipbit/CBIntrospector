@@ -23,6 +23,11 @@
 + (NSString *)filePathWithView:(UIView *)view;
 @end
 
+@interface UIWindow (AutoLayoutDebug)
++ (UIWindow *)keyWindow;
+- (NSString *)_autolayoutTrace;
+@end
+
 @implementation UIView (Introspector)
 @dynamic memoryAddress;
 @dynamic introspectorName;
@@ -598,6 +603,11 @@
 	}
 	
 	[outputString appendString:@"\n"];
+    NSArray * vertical = [self constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
+    NSArray * horizontal = [self constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
+    NSString * autodump = [[UIWindow keyWindow] _autolayoutTrace];
+    
+    outputString = [outputString stringByAppendingFormat:@"\n\nVERTICAL CONSTRAINS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
     
 	free(properties);
     free(buffer);
