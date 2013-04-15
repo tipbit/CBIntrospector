@@ -35,6 +35,7 @@
 		40DC8A25171CB9A900906666 /* UIView+ViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A06171CB82300906666 /* UIView+ViewController.h */; };
 		40DC8A26171CB9A900906666 /* UIWindow+Introspector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A08171CB82300906666 /* UIWindow+Introspector.h */; };
 		40DC8A27171CB9A900906666 /* JSONKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A0B171CB82300906666 /* JSONKit.h */; };
+		40DC8A3C171CCA5800906666 /* CBIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89EA171CB70800906666 /* CBIntrospect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +68,7 @@
 /* Begin PBXFileReference section */
 		40DC89E0171CB70800906666 /* libCBIntrospect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBIntrospect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DC89E3171CB70800906666 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		40DC89EA171CB70800906666 /* CBIntrospect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntrospect.m; sourceTree = "<group>"; };
+		40DC89EA171CB70800906666 /* CBIntrospect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntrospect.m; sourceTree = "SOURCE_ROOT"; };
 		40DC89F1171CB82300906666 /* CBFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBFileWatcher.h; sourceTree = SOURCE_ROOT; };
 		40DC89F2171CB82300906666 /* CBFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBFileWatcher.m; sourceTree = SOURCE_ROOT; };
 		40DC89F3171CB82300906666 /* CBIntrospectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntrospectConstants.h; sourceTree = SOURCE_ROOT; };
@@ -232,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DC8A3C171CCA5800906666 /* CBIntrospect.m in Sources */,
 				40DC8A0D171CB82300906666 /* CBFileWatcher.m in Sources */,
 				40DC8A0E171CB82300906666 /* DCCrossHairView.m in Sources */,
 				40DC8A0F171CB82300906666 /* DCFrameView.m in Sources */,
