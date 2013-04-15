@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40DC89E4171CB70800906666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC89E3171CB70800906666 /* Foundation.framework */; };
+		40DC8A0D171CB82300906666 /* CBFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89F2171CB82300906666 /* CBFileWatcher.m */; };
+		40DC8A0E171CB82300906666 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89F6171CB82300906666 /* DCCrossHairView.m */; };
+		40DC8A0F171CB82300906666 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89F8171CB82300906666 /* DCFrameView.m */; };
+		40DC8A10171CB82300906666 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89FA171CB82300906666 /* DCIntrospect.m */; };
+		40DC8A11171CB82300906666 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89FD171CB82300906666 /* DCStatusBarOverlay.m */; };
+		40DC8A12171CB82300906666 /* DCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89FF171CB82300906666 /* DCUtility.m */; };
+		40DC8A13171CB82300906666 /* DLInvocationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A01171CB82300906666 /* DLInvocationResult.m */; };
+		40DC8A14171CB82300906666 /* DLStatementParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A03171CB82300906666 /* DLStatementParser.m */; };
+		40DC8A15171CB82300906666 /* UIView+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A05171CB82300906666 /* UIView+Introspector.m */; };
+		40DC8A16171CB82300906666 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A07171CB82300906666 /* UIView+ViewController.m */; };
+		40DC8A17171CB82300906666 /* UIWindow+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A09171CB82300906666 /* UIWindow+Introspector.m */; };
+		40DC8A18171CB82300906666 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A0C171CB82300906666 /* JSONKit.m */; };
+		40DC8A19171CB9A900906666 /* CBFileWatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F1171CB82300906666 /* CBFileWatcher.h */; };
+		40DC8A1A171CB9A900906666 /* CBIntrospectConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F3171CB82300906666 /* CBIntrospectConstants.h */; };
+		40DC8A1B171CB9A900906666 /* CBMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F4171CB82300906666 /* CBMacros.h */; };
+		40DC8A1C171CB9A900906666 /* DCCrossHairView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F5171CB82300906666 /* DCCrossHairView.h */; };
+		40DC8A1D171CB9A900906666 /* DCFrameView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F7171CB82300906666 /* DCFrameView.h */; };
+		40DC8A1E171CB9A900906666 /* DCIntrospect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F9171CB82300906666 /* DCIntrospect.h */; };
+		40DC8A1F171CB9A900906666 /* DCIntrospectSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89FB171CB82300906666 /* DCIntrospectSettings.h */; };
+		40DC8A20171CB9A900906666 /* DCStatusBarOverlay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89FC171CB82300906666 /* DCStatusBarOverlay.h */; };
+		40DC8A21171CB9A900906666 /* DCUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89FE171CB82300906666 /* DCUtility.h */; };
+		40DC8A22171CB9A900906666 /* DLInvocationResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A00171CB82300906666 /* DLInvocationResult.h */; };
+		40DC8A23171CB9A900906666 /* DLStatementParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A02171CB82300906666 /* DLStatementParser.h */; };
+		40DC8A24171CB9A900906666 /* UIView+Introspector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A04171CB82300906666 /* UIView+Introspector.h */; };
+		40DC8A25171CB9A900906666 /* UIView+ViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A06171CB82300906666 /* UIView+ViewController.h */; };
+		40DC8A26171CB9A900906666 /* UIWindow+Introspector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A08171CB82300906666 /* UIWindow+Introspector.h */; };
+		40DC8A27171CB9A900906666 /* JSONKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC8A0B171CB82300906666 /* JSONKit.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40DC89DE171CB70800906666 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				40DC8A19171CB9A900906666 /* CBFileWatcher.h in CopyFiles */,
+				40DC8A1A171CB9A900906666 /* CBIntrospectConstants.h in CopyFiles */,
+				40DC8A1B171CB9A900906666 /* CBMacros.h in CopyFiles */,
+				40DC8A1C171CB9A900906666 /* DCCrossHairView.h in CopyFiles */,
+				40DC8A1D171CB9A900906666 /* DCFrameView.h in CopyFiles */,
+				40DC8A1E171CB9A900906666 /* DCIntrospect.h in CopyFiles */,
+				40DC8A1F171CB9A900906666 /* DCIntrospectSettings.h in CopyFiles */,
+				40DC8A20171CB9A900906666 /* DCStatusBarOverlay.h in CopyFiles */,
+				40DC8A21171CB9A900906666 /* DCUtility.h in CopyFiles */,
+				40DC8A22171CB9A900906666 /* DLInvocationResult.h in CopyFiles */,
+				40DC8A23171CB9A900906666 /* DLStatementParser.h in CopyFiles */,
+				40DC8A24171CB9A900906666 /* UIView+Introspector.h in CopyFiles */,
+				40DC8A25171CB9A900906666 /* UIView+ViewController.h in CopyFiles */,
+				40DC8A26171CB9A900906666 /* UIWindow+Introspector.h in CopyFiles */,
+				40DC8A27171CB9A900906666 /* JSONKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40DC89E0171CB70800906666 /* libCBIntrospect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBIntrospect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DC89E3171CB70800906666 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40DC89EA171CB70800906666 /* CBIntrospect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntrospect.m; sourceTree = "<group>"; };
+		40DC89F1171CB82300906666 /* CBFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBFileWatcher.h; sourceTree = SOURCE_ROOT; };
+		40DC89F2171CB82300906666 /* CBFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBFileWatcher.m; sourceTree = SOURCE_ROOT; };
+		40DC89F3171CB82300906666 /* CBIntrospectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntrospectConstants.h; sourceTree = SOURCE_ROOT; };
+		40DC89F4171CB82300906666 /* CBMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMacros.h; sourceTree = SOURCE_ROOT; };
+		40DC89F5171CB82300906666 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = SOURCE_ROOT; };
+		40DC89F6171CB82300906666 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = SOURCE_ROOT; };
+		40DC89F7171CB82300906666 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = SOURCE_ROOT; };
+		40DC89F8171CB82300906666 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = SOURCE_ROOT; };
+		40DC89F9171CB82300906666 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = SOURCE_ROOT; };
+		40DC89FA171CB82300906666 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = SOURCE_ROOT; };
+		40DC89FB171CB82300906666 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = SOURCE_ROOT; };
+		40DC89FC171CB82300906666 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = SOURCE_ROOT; };
+		40DC89FD171CB82300906666 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = SOURCE_ROOT; };
+		40DC89FE171CB82300906666 /* DCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUtility.h; sourceTree = SOURCE_ROOT; };
+		40DC89FF171CB82300906666 /* DCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUtility.m; sourceTree = SOURCE_ROOT; };
+		40DC8A00171CB82300906666 /* DLInvocationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLInvocationResult.h; sourceTree = SOURCE_ROOT; };
+		40DC8A01171CB82300906666 /* DLInvocationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLInvocationResult.m; sourceTree = SOURCE_ROOT; };
+		40DC8A02171CB82300906666 /* DLStatementParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStatementParser.h; sourceTree = SOURCE_ROOT; };
+		40DC8A03171CB82300906666 /* DLStatementParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLStatementParser.m; sourceTree = SOURCE_ROOT; };
+		40DC8A04171CB82300906666 /* UIView+Introspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Introspector.h"; sourceTree = SOURCE_ROOT; };
+		40DC8A05171CB82300906666 /* UIView+Introspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Introspector.m"; sourceTree = SOURCE_ROOT; };
+		40DC8A06171CB82300906666 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = SOURCE_ROOT; };
+		40DC8A07171CB82300906666 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = SOURCE_ROOT; };
+		40DC8A08171CB82300906666 /* UIWindow+Introspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Introspector.h"; sourceTree = SOURCE_ROOT; };
+		40DC8A09171CB82300906666 /* UIWindow+Introspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Introspector.m"; sourceTree = SOURCE_ROOT; };
+		40DC8A0B171CB82300906666 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		40DC8A0C171CB82300906666 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		40DC8A2C171CBAA700906666 /* CBIntrospect-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBIntrospect-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		40DC8A2D171CBAA700906666 /* CBIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntrospect.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DC89DD171CB70800906666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DC89E4171CB70800906666 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DC89D7171CB70800906666 = {
+			isa = PBXGroup;
+			children = (
+				40DC89E5171CB70800906666 /* CBIntrospect */,
+				40DC89E2171CB70800906666 /* Frameworks */,
+				40DC89E1171CB70800906666 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40DC89E1171CB70800906666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DC89E0171CB70800906666 /* libCBIntrospect.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DC89E2171CB70800906666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DC89E3171CB70800906666 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40DC89E5171CB70800906666 /* CBIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				40DC8A2C171CBAA700906666 /* CBIntrospect-Prefix.pch */,
+				40DC8A2D171CBAA700906666 /* CBIntrospect.h */,
+				40DC89F1171CB82300906666 /* CBFileWatcher.h */,
+				40DC89F2171CB82300906666 /* CBFileWatcher.m */,
+				40DC89EA171CB70800906666 /* CBIntrospect.m */,
+				40DC89F3171CB82300906666 /* CBIntrospectConstants.h */,
+				40DC89F4171CB82300906666 /* CBMacros.h */,
+				40DC89F5171CB82300906666 /* DCCrossHairView.h */,
+				40DC89F6171CB82300906666 /* DCCrossHairView.m */,
+				40DC89F7171CB82300906666 /* DCFrameView.h */,
+				40DC89F8171CB82300906666 /* DCFrameView.m */,
+				40DC89F9171CB82300906666 /* DCIntrospect.h */,
+				40DC89FA171CB82300906666 /* DCIntrospect.m */,
+				40DC89FB171CB82300906666 /* DCIntrospectSettings.h */,
+				40DC89FC171CB82300906666 /* DCStatusBarOverlay.h */,
+				40DC89FD171CB82300906666 /* DCStatusBarOverlay.m */,
+				40DC89FE171CB82300906666 /* DCUtility.h */,
+				40DC89FF171CB82300906666 /* DCUtility.m */,
+				40DC8A00171CB82300906666 /* DLInvocationResult.h */,
+				40DC8A01171CB82300906666 /* DLInvocationResult.m */,
+				40DC8A02171CB82300906666 /* DLStatementParser.h */,
+				40DC8A03171CB82300906666 /* DLStatementParser.m */,
+				40DC8A04171CB82300906666 /* UIView+Introspector.h */,
+				40DC8A05171CB82300906666 /* UIView+Introspector.m */,
+				40DC8A06171CB82300906666 /* UIView+ViewController.h */,
+				40DC8A07171CB82300906666 /* UIView+ViewController.m */,
+				40DC8A08171CB82300906666 /* UIWindow+Introspector.h */,
+				40DC8A09171CB82300906666 /* UIWindow+Introspector.m */,
+				40DC8A0A171CB82300906666 /* Vendor */,
+			);
+			path = CBIntrospect;
+			sourceTree = "<group>";
+		};
+		40DC8A0A171CB82300906666 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				40DC8A0B171CB82300906666 /* JSONKit.h */,
+				40DC8A0C171CB82300906666 /* JSONKit.m */,
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40DC89DF171CB70800906666 /* CBIntrospect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DC89EE171CB70800906666 /* Build configuration list for PBXNativeTarget "CBIntrospect" */;
+			buildPhases = (
+				40DC89DC171CB70800906666 /* Sources */,
+				40DC89DD171CB70800906666 /* Frameworks */,
+				40DC89DE171CB70800906666 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBIntrospect;
+			productName = CBIntrospect;
+			productReference = 40DC89E0171CB70800906666 /* libCBIntrospect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DC89D8171CB70800906666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Christopher Bess modified by Tipbit, Inc.";
+			};
+			buildConfigurationList = 40DC89DB171CB70800906666 /* Build configuration list for PBXProject "CBIntrospect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40DC89D7171CB70800906666;
+			productRefGroup = 40DC89E1171CB70800906666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40DC89DF171CB70800906666 /* CBIntrospect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DC89DC171CB70800906666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DC8A0D171CB82300906666 /* CBFileWatcher.m in Sources */,
+				40DC8A0E171CB82300906666 /* DCCrossHairView.m in Sources */,
+				40DC8A0F171CB82300906666 /* DCFrameView.m in Sources */,
+				40DC8A10171CB82300906666 /* DCIntrospect.m in Sources */,
+				40DC8A11171CB82300906666 /* DCStatusBarOverlay.m in Sources */,
+				40DC8A12171CB82300906666 /* DCUtility.m in Sources */,
+				40DC8A13171CB82300906666 /* DLInvocationResult.m in Sources */,
+				40DC8A14171CB82300906666 /* DLStatementParser.m in Sources */,
+				40DC8A15171CB82300906666 /* UIView+Introspector.m in Sources */,
+				40DC8A16171CB82300906666 /* UIView+ViewController.m in Sources */,
+				40DC8A17171CB82300906666 /* UIWindow+Introspector.m in Sources */,
+				40DC8A18171CB82300906666 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40DC89EC171CB70800906666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40DC89ED171CB70800906666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40DC89EF171CB70800906666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CBIntrospect.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntrospect-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		40DC89F0171CB70800906666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CBIntrospect.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntrospect-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DC89DB171CB70800906666 /* Build configuration list for PBXProject "CBIntrospect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DC89EC171CB70800906666 /* Debug */,
+				40DC89ED171CB70800906666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DC89EE171CB70800906666 /* Build configuration list for PBXNativeTarget "CBIntrospect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DC89EF171CB70800906666 /* Debug */,
+				40DC89F0171CB70800906666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DC89D8171CB70800906666 /* Project object */;
+}
