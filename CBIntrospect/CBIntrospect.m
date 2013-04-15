@@ -203,7 +203,7 @@ static NSString * gIntrospectorKeyName = @"introspectorName"; // change using [C
     unsigned addr = 0;
     [[NSScanner scannerWithString:memAddress] scanHexInt:&addr];
     
-    UIView *view = (__bridge UIView *)((void*)addr);
+    UIView *view = ( UIView *)((void*)addr);
     return view;
 }
 
