@@ -15,6 +15,7 @@
 #include <sys/types.h>
 #import <objc/runtime.h>
 #import "CBIntrospect.h"
+#import "UIView+ViewController.h"
 
 // expands to a string representation of the object memory address
 #define MEM_STR(obj) [NSString stringWithFormat:@"%lx", (unsigned long)obj]
@@ -507,6 +508,9 @@
 	if ([objectClass isSubclassOfClass:UIView.class])
 	{
 		UIView *view = (UIView *)self;
+		
+		[outputString appendFormat:@"  View Controller: %@\n\n", view.viewController];
+		
 		// print out generic uiview properties
 		[outputString appendString:@"  ** UIView properties **\n"];
 //        [outputString appendFormat:@"    introspectorName: %@\n", self.introspectorName];
