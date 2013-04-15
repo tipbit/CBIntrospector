@@ -522,7 +522,7 @@
 		[outputString appendFormat:@"    autoresizingMask: %@\n", [UIView describeProperty:@"autoresizingMask" value:[NSNumber numberWithInt:view.autoresizingMask]]];
 		[outputString appendFormat:@"    autoresizesSubviews: %@\n", NSStringFromBOOL(view.autoresizesSubviews)];
 		[outputString appendFormat:@"    contentMode: %@ | ", [UIView describeProperty:@"contentMode" value:[NSNumber numberWithInt:view.contentMode]]];
-//		[outputString appendFormat:@"contentStretch: %@\n", NSStringFromCGRect(view.contentStretch)];
+		[outputString appendFormat:@"contentStretch: \n"];
 		[outputString appendFormat:@"    backgroundColor: %@\n", [[DCUtility sharedInstance] describeColor:view.backgroundColor]];
 		[outputString appendFormat:@"    alpha: %.2f | ", view.alpha];
 		[outputString appendFormat:@"opaque: %@ | ", NSStringFromBOOL(view.opaque)];
