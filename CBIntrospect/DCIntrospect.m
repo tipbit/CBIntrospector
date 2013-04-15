@@ -1169,7 +1169,7 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
     NSArray * horizontal = [object constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
     NSString * autodump = [[UIWindow keyWindow] _autolayoutTrace];
     
-    outputString = [outputString stringByAppendingFormat:@"\n\nVERTICAL CONSTRAINS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
+    outputString = [outputString stringByAppendingFormat:@"\n\nVERTICAL CONSTRAINTS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
 	DCNamedLog(@"%@", outputString);
 #endif
 }
