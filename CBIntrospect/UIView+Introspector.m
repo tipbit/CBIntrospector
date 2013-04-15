@@ -607,7 +607,7 @@
     NSArray * horizontal = [self constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
     NSString * autodump = [[UIWindow keyWindow] _autolayoutTrace];
     
-    outputString = [outputString stringByAppendingFormat:@"\n\nVERTICAL CONSTRAINS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
+    [outputString appendFormat:@"\n\nVERTICAL CONSTRAINTS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
     
 	free(properties);
     free(buffer);
