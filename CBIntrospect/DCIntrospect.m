@@ -71,6 +71,11 @@ static bool AmIBeingDebugged(void)
 #define DCNamedLog(MSG, ...) ({});
 #endif
 
+@interface UIWindow (AutoLayoutDebug)
++ (UIWindow *)keyWindow;
+- (NSString *)_autolayoutTrace;
+@end
+
 @interface DCIntrospect ()
 
 - (void)takeFirstResponder;
@@ -1160,6 +1165,11 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
 {
 #ifdef DEBUG
     NSString *outputString = [object viewDescription];
+    NSArray * vertical = [object constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
+    NSArray * horizontal = [object constraintsAffectingLayoutForAxis:UILayoutConstraintAxisVertical];
+    NSString * autodump = [[UIWindow keyWindow] _autolayoutTrace];
+    
+    outputString = [outputString stringByAppendingFormat:@"\n\nVERTICAL CONSTRAINS\n\n%@\n\nHORIZONTAL CONSTRAINTS\n\n%@\n\nAUTOLAYOUT TRACE\n\n%@\n\n", [vertical description], [horizontal description], autodump];
 	DCNamedLog(@"%@", outputString);
 #endif
 }
