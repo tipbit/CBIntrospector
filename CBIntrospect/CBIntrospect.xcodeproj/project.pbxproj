@@ -15,11 +15,11 @@
 		40DC8A11171CB82300906666 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89FD171CB82300906666 /* DCStatusBarOverlay.m */; };
 		40DC8A12171CB82300906666 /* DCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC89FF171CB82300906666 /* DCUtility.m */; };
 		40DC8A13171CB82300906666 /* DLInvocationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A01171CB82300906666 /* DLInvocationResult.m */; };
-		40DC8A14171CB82300906666 /* DLStatementParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A03171CB82300906666 /* DLStatementParser.m */; };
+		40DC8A14171CB82300906666 /* DLStatementParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A03171CB82300906666 /* DLStatementParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		40DC8A15171CB82300906666 /* UIView+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A05171CB82300906666 /* UIView+Introspector.m */; };
 		40DC8A16171CB82300906666 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A07171CB82300906666 /* UIView+ViewController.m */; };
 		40DC8A17171CB82300906666 /* UIWindow+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A09171CB82300906666 /* UIWindow+Introspector.m */; };
-		40DC8A18171CB82300906666 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A0C171CB82300906666 /* JSONKit.m */; };
+		40DC8A18171CB82300906666 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A0C171CB82300906666 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		40DC8A19171CB9A900906666 /* CBFileWatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F1171CB82300906666 /* CBFileWatcher.h */; };
 		40DC8A1A171CB9A900906666 /* CBIntrospectConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F3171CB82300906666 /* CBIntrospectConstants.h */; };
 		40DC8A1B171CB9A900906666 /* CBMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F4171CB82300906666 /* CBMacros.h */; };
@@ -306,6 +306,7 @@
 		40DC89EF171CB70800906666 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/CBIntrospect.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBIntrospect-Prefix.pch";
@@ -318,6 +319,7 @@
 		40DC89F0171CB70800906666 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/CBIntrospect.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBIntrospect-Prefix.pch";
