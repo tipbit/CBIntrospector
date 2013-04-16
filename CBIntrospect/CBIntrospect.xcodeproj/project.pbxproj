@@ -68,7 +68,7 @@
 /* Begin PBXFileReference section */
 		40DC89E0171CB70800906666 /* libCBIntrospect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBIntrospect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DC89E3171CB70800906666 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		40DC89EA171CB70800906666 /* CBIntrospect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntrospect.m; sourceTree = "SOURCE_ROOT"; };
+		40DC89EA171CB70800906666 /* CBIntrospect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntrospect.m; sourceTree = SOURCE_ROOT; };
 		40DC89F1171CB82300906666 /* CBFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBFileWatcher.h; sourceTree = SOURCE_ROOT; };
 		40DC89F2171CB82300906666 /* CBFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBFileWatcher.m; sourceTree = SOURCE_ROOT; };
 		40DC89F3171CB82300906666 /* CBIntrospectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntrospectConstants.h; sourceTree = SOURCE_ROOT; };
