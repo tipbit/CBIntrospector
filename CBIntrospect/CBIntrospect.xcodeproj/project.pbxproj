@@ -19,7 +19,6 @@
 		40DC8A15171CB82300906666 /* UIView+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A05171CB82300906666 /* UIView+Introspector.m */; };
 		40DC8A16171CB82300906666 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A07171CB82300906666 /* UIView+ViewController.m */; };
 		40DC8A17171CB82300906666 /* UIWindow+Introspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A09171CB82300906666 /* UIWindow+Introspector.m */; };
-		40DC8A18171CB82300906666 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A0C171CB82300906666 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		40DC8A19171CB9A900906666 /* CBFileWatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F1171CB82300906666 /* CBFileWatcher.h */; };
 		40DC8A1A171CB9A900906666 /* CBIntrospectConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F3171CB82300906666 /* CBIntrospectConstants.h */; };
 		40DC8A1B171CB9A900906666 /* CBMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DC89F4171CB82300906666 /* CBMacros.h */; };
@@ -95,7 +94,6 @@
 		40DC8A08171CB82300906666 /* UIWindow+Introspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Introspector.h"; sourceTree = SOURCE_ROOT; };
 		40DC8A09171CB82300906666 /* UIWindow+Introspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Introspector.m"; sourceTree = SOURCE_ROOT; };
 		40DC8A0B171CB82300906666 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		40DC8A0C171CB82300906666 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		40DC8A2C171CBAA700906666 /* CBIntrospect-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBIntrospect-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		40DC8A2D171CBAA700906666 /* CBIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntrospect.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				40DC8A0B171CB82300906666 /* JSONKit.h */,
-				40DC8A0C171CB82300906666 /* JSONKit.m */,
 			);
 			path = Vendor;
 			sourceTree = SOURCE_ROOT;
@@ -245,7 +242,6 @@
 				40DC8A15171CB82300906666 /* UIView+Introspector.m in Sources */,
 				40DC8A16171CB82300906666 /* UIView+ViewController.m in Sources */,
 				40DC8A17171CB82300906666 /* UIWindow+Introspector.m in Sources */,
-				40DC8A18171CB82300906666 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +319,7 @@
 				DSTROOT = /tmp/CBIntrospect.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBIntrospect-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
