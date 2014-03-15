@@ -313,6 +313,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 			};
 			name = Debug;
 		};
@@ -327,6 +328,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 			};
 			name = Release;
 		};
