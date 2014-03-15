@@ -200,8 +200,8 @@ static NSString * gIntrospectorKeyName = @"introspectorName"; // change using [C
 - (UIView *)viewWithMemoryAddress:(NSString *)memAddress
 {
     // convert the memaddres to a pointer
-    unsigned addr = 0;
-    [[NSScanner scannerWithString:memAddress] scanHexInt:&addr];
+    unsigned long long addr = 0;
+    [[NSScanner scannerWithString:memAddress] scanHexLongLong:&addr];
     
     UIView *view = (__bridge UIView *)((void*)addr);
     return view;
