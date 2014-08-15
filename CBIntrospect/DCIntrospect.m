@@ -150,8 +150,11 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
 	}
 	else
 	{
-		return valueForKey(self, _cmd, key);
+        if (valueForKey) {
+            return valueForKey(self, _cmd, key);
+        }
 	}
+    return nil;
 }
 
 // See http://stackoverflow.com/questions/6617472/why-does-valueforkey-on-a-uitextfield-throws-an-exception-for-uitextinputtraits
