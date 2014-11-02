@@ -573,10 +573,17 @@
 				{
 					// get the return object and type for the selector
 					NSString *returnType = [NSString stringWithUTF8String:[[self methodSignatureForSelector:sel] methodReturnType]];
-					id returnObject = [self valueForKey:propertyName];
-					if ([returnType isEqualToString:@"c"])
-						returnObject = [NSNumber numberWithBool:[returnObject intValue] != 0];
-					
+                    id returnObject;
+                    if ([returnType isEqualToString:@":"]) {
+                        // KVC can't box/unbox SEL,
+                        // so valueForKey doesn't work on them.
+                        returnObject = @"<selector>";
+                    }
+                    else {
+                        returnObject = [self valueForKey:propertyName];
+                        if ([returnType isEqualToString:@"c"])
+                            returnObject = [NSNumber numberWithBool:[returnObject intValue] != 0];
+                    }
 					propertyDescription = [UIView describeProperty:propertyName value:returnObject];
 				}
 				@catch (NSException *exception)
