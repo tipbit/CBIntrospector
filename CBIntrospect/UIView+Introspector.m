@@ -564,6 +564,15 @@
 		{
 			// get the property name and selector name
 			NSString *propertyName = [NSString stringWithCString:property_getName(properties[i]) encoding:NSUTF8StringEncoding];
+            if ([propertyName isEqualToString:@"_capOffsetFromBoundsTop"] ||
+                [propertyName isEqualToString:@"_firstLineBaselineOffsetFromBoundsTop"] ||
+                [propertyName isEqualToString:@"_firstLineCapFrameOriginY"] ||
+                [propertyName isEqualToString:@"_firstLineBaselineFrameOriginY"] ||
+                [propertyName hasPrefix:@"_"]) {
+                // Introspecting UILabel for these fields can result in an assert:
+                // "To use this hack, your label must only contain content using a single font."
+                continue;
+            }
 			
 			SEL sel = NSSelectorFromString(propertyName);
 			if ([self respondsToSelector:sel])
